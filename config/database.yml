@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: rails-octo-sandbox_development
+
+test:
+  <<: *default
+  database: rails-octo-sandbox_test
+
+production:
+  <<: *default
+  database: rails-octo-sandbox_production
+  username: rails-octo-sandbox
+  password: <%= ENV['RAILS-OCTO-SANDBOX_DATABASE_PASSWORD'] %>
