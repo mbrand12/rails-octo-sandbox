@@ -1,0 +1,23 @@
+/* universal */
+
+body {
+  padding-top: 60px;
+}
+
+/* links */
+.shared-links {
+  padding-top: 10px;
+}
+
+/* forms */
+.c-indicator {
+  background-color: #d7d7d7;
+}
+
+/* devise bootstrap workaround */
+.alert-notice {
+  @include alert-variant($alert-success-bg, $alert-success-border, $alert-success-text);
+}
+.alert-alert {
+  @include alert-variant($alert-danger-bg, $alert-danger-border, $alert-danger-text);
+}
