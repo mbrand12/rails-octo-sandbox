@@ -29,6 +29,7 @@ group :development, :test do
   gem 'byebug',      '6.0.2'
   gem 'web-console', '2.2.1'
   gem 'spring',      '1.4.0'
+  gem 'figaro',      '1.1.1'
 end
 
 group :test do

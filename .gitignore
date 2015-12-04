@@ -14,3 +14,6 @@
 
 # Ignore sping files
 /spring/*.pid
+
+# Ignore application configuration
+/config/application.yml
