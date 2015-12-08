@@ -12,6 +12,7 @@ gem 'bootstrap-will_paginate', '0.0.10'
 gem 'devise',                 '3.5.2'
 gem 'omniauth-github',        '1.1.2'
 gem 'omniauth-google-oauth2', '0.2.6'
+gem 'omniauth-oauth2',        '1.3.1'   # 1.4.0 breaks omniauth-google-oauth2!
 
 gem 'sass-rails',   '5.0.4'
 gem 'uglifier',     '2.7.2'
