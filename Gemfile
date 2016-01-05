@@ -31,6 +31,8 @@ group :development, :test do
   gem 'web-console', '2.2.1'
   gem 'spring',      '1.4.0'
   gem 'figaro',      '1.1.1'
+
+  gem 'rspec-rails', '3.4.0'
 end
 
 group :test do
@@ -38,6 +40,9 @@ group :test do
   gem 'mini_backtrace' ,    '0.1.3'
   gem 'guard',              '2.13.0'
   gem 'guard-minitest',     '2.4.4'
+  gem 'cucumber-rails',     '1.4.2', require: false
+  gem 'database_cleaner',   '1.5.1'
+  gem 'email_spec',         '1.6.0'
 end
 
 group :production do

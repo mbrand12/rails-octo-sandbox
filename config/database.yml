@@ -7,7 +7,7 @@ development:
   <<: *default
   database: rails-octo-sandbox_development
 
-test:
+test: &test
   <<: *default
   database: rails-octo-sandbox_test
 
@@ -16,3 +16,6 @@ production:
   database: rails-octo-sandbox_production
   username: rails-octo-sandbox
   password: <%= ENV['RAILS-OCTO-SANDBOX_DATABASE_PASSWORD'] %>
+
+cucumber:
+  <<: *test
