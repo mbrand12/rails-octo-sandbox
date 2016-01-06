@@ -41,6 +41,7 @@ group :test do
   gem 'guard',              '2.13.0'
   gem 'guard-minitest',     '2.4.4'
   gem 'cucumber-rails',     '1.4.2', require: false
+  gem 'factory_girl_rails', '4.5.0'
   gem 'database_cleaner',   '1.5.1'
   gem 'email_spec',         '1.6.0'
 end
