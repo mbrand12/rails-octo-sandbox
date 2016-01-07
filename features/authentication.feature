@@ -12,10 +12,19 @@ I should be able to sign up, sign in and sign out
     Then I should see the confirmation message
 
   Scenario: Log in, Log out
-    Given that I am an registered user
+    Given that I am a registered user
     And that I am on the homepage
     When I log in
-    Then I should see the wellcome message
+    Then I should see the welcome message
     When I log out
     Then I should see the goodbye message
-    # TODO: FILL IN THE STEPS :)
+
+  Scenario: Password reset
+    Given that I am a registered user
+    And that I am on the login page
+    When I request password reset
+    And I receive an email
+    And I open the email
+    And I click the first link in the email
+    And I change the password
+    Then I should see the password changed message
