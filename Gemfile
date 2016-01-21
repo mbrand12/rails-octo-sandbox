@@ -29,7 +29,7 @@ gem 'sdoc',         '0.4.1', group: :doc
 group :development, :test do
   gem 'byebug',      '6.0.2'
   gem 'web-console', '2.2.1'
-  gem 'spring',      '1.4.0'
+  gem 'spring',      '1.6.2'
   gem 'figaro',      '1.1.1'
 
   gem 'rspec-rails', '3.4.0'
@@ -43,7 +43,7 @@ group :test do
   gem 'cucumber-rails',     '1.4.2', require: false
   gem 'factory_girl_rails', '4.5.0'
   gem 'database_cleaner',   '1.5.1'
-  gem 'email_spec',         '1.6.0'
+  gem 'email_spec',         '2.0.0'
 end
 
 group :production do
