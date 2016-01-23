@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: ros_bootstraping_development
+test:
+  <<: *default
+  database: ros_bootstraping_test
+production:
+  <<: *default
+  database: ros_bootstraping_production
+  username: ros_bootstraping
+  password: <%= ENV['ROS_BOOTSTRAPING_DATABASE_PASSWORD'] %>
