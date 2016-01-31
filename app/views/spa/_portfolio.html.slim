@@ -1,0 +1,26 @@
+section id="portfolio" class="bg-light-gray"
+  div class="container"
+    div class="row"
+      div class="col-lg-12 text-center"
+        h2 class="section-heading" Portfolio
+        h3 class="section-subheading text-muted"
+          | Lorem ipsum dolor sit amet consectetur.
+    div class="row"
+      - items = [ \
+          ["1", "roundicons.png", "Round Icons", "Graphic Design"],
+          ["2", "startup-framework.png", "Startup Framework", "Website Design"],
+          ["3", "treehouse.png", "Treehouse", "Website Design"],
+          ["4", "golden.png", "Golden", "Website Design"],
+          ["5", "escape.png", "Escape", "Website Design"],
+          ["6", "dreams.png", "Dreams", "Website Design"] \
+        ]
+      - items.each do |item|
+        div class="col-md-4 col-sm-6 portfolio-item"
+          a class="portfolio-link" href="#portfolioModal#{item[0]}" data-toggle="modal"
+            div class="portfolio-hover"
+              div class="portfolio-hover-content"
+                i class="fa fa-lus fa-3x"
+            =image_tag "portfolio/#{item[1]}", class: "img-responsive"
+          div class="portfolio-caption"
+            h4 #{item[2]}
+            p class="text-muted" #{item[3]}
